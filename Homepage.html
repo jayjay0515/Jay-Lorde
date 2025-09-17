@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #001f3f, #0074D9);
+            color: white;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        nav {
+            margin: 30px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            background: #004080;
+            padding: 14px 28px;
+            border-radius: 8px;
+            transition: 0.3s;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            background: #0066cc;
+        }
+        .profile-pic {
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        .profile-pic img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 6px solid white;
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+
+        
+        @media (max-width: 600px) {
+            header {
+                font-size: 1.6em;
+            }
+            .profile-pic img {
+                width: 200px;
+                height: 200px;
+            }
+            nav a {
+                width: 80%;
+                font-size: 1em;
+                padding: 12px;
+            }
+        }
+
+        
+        @media (min-width: 1000px) {
+            .profile-pic img {
+                width: 300px;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>My Website</header>
+    <div class="profile-pic">
+    <img src="{{ url_for('static', filename='IMG_20240404_220507.jpg.jpeg') }}" alt="My Picture">
+</div>
+    <nav>
+        <a href="/portfolio">Portfolio</a>
+        <a href="/about">About Me</a>
+        <a href="/contact">Contact Me</a>
+    </nav>
+</body>
+</html>

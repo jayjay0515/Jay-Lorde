@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #001f3f, #0074D9);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        a {
+            color: #00d9ff;
+            text-decoration: none;
+        }
+        .about-box {
+            margin: auto;
+            width: 80%;
+            max-width: 500px;
+            background: #004080;
+            padding: 20px;
+            border-radius: 15px;
+        }
+        .skills-title {
+            margin-top: 25px;
+            font-size: 1.3em;
+            font-weight: bold;
+            text-align: center;
+        }
+        .skill {
+            margin: 15px 0;
+            text-align: left;
+        }
+        .bar-container {
+            background: #003366;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 20px;
+        }
+        .bar {
+            height: 20px;
+            text-align: right;
+            padding-right: 10px;
+            color: #fff;
+            line-height: 20px;
+            font-size: 0.8em;
+        }
+        .html {width: 80%; background: #e34c26;}
+        .python {width: 70%; background: #3776ab;}
+        .php {width: 65%; background: #8993be;}
+        .java {width: 60%; background: #f89820;}
+        
+        @media (max-width: 600px) {
+            .about-box {
+                width: 95%;
+                font-size: 0.9em;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>About Me</h1>
+    <div class="about-box">
+        <p>Hi! I'm Jay Lorde Beroña,a person who loves coding, music, and anime .</p>
+        <p>I enjoy exploring new tech, playing games, and making new projects.</p>
+        <p>graduated elementary at Taping Elementary School</p>
+        <p> Finish Highschool at Northern Abra National HighSchool</p>
+        <p>Currently studying BSIT in University of Abra main campus .</p>
+        <p>skills</p>
+
+        <!-- My Skills Section -->
+        <div class="skills-title">My Skills</div>
+        <div class="skill">
+            <p>HTML</p>
+            <div class="bar-container"><div class="bar html">80%</div></div>
+        </div>
+        <div class="skill">
+            <p>Python</p>
+            <div class="bar-container"><div class="bar python">70%</div></div>
+        </div>
+        <div class="skill">
+            <p>PHP</p>
+            <div class="bar-container"><div class="bar php">65%</div></div>
+        </div>
+        <div class="skill">
+            <p>Java</p>
+            <div class="bar-container"><div class="bar java">60%</div></div>
+        </div>
+    </div>
+    <p><a href="/">⬅ Back to Home</a></p>
+</body>
+</html>

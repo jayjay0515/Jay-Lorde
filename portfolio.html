@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #001f3f, #0074D9);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        a {
+            color: #00d9ff;
+            text-decoration: none;
+        }
+        .files {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .files div {
+            background: #004080;
+            padding: 15px;
+            border-radius: 10px;
+            width: 80%;
+            margin: auto;
+        }
+
+        @media (max-width: 600px) {
+            .files div {
+                width: 95%;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>My Portfolio</h1>
+    <p>Here are some of my works:</p>
+    <div class="files">
+        <div>📂 Project 1</div>
+        <div>📂 Project 2</div>
+        <div>📂 Project 3</div>
+    </div>
+    <p><a href="/">⬅ Back to Home</a></p>
+</body>
+</html>
